@@ -1,18 +1,27 @@
 <script>
 import CardPlayList from '../components/CardPlayList.vue';
+import NavBar from "../components/Navbar.vue";
 export default {
     name: "HomeView",
-    components: { CardPlayList }
+    components: { CardPlayList, NavBar },
+    methods: {
+        showProfile: function (name) {
+            this.$router.push({ name: 'profile', params: { name: name } });
+        }
+    }
 };
 </script>
 
 <!-- ///////////////////////////////////////////////////////////////////// -->
 <template>
+    <div class="navBar">
+        <NavBar />
+    </div>
     <div class="body">
         <div class="header">
             <div class="titleHeader">
                 <p class="colorText">{{"Bonjour"}}</p>
-                <a href="ProfileView.vue" class="pseudo">{{"@Pseudo"}}</a>
+                <a @click="showProfile('Clement');" class="pseudo">{{"@Pseudo"}}</a>
             </div>
         </div>
         <div class="CardPlaylists">
@@ -25,6 +34,10 @@ export default {
 
 <!-- ///////////////////////////////////////////////////////////////////// -->
 <style>
+.navBar {
+    margin-right: 70px;
+}
+
 /* --- Les composants du header --- */
 .colorText {
     font-size: 64px;
@@ -47,6 +60,7 @@ export default {
     background: -webkit-linear-gradient(#8774FF, #FF98BD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
     transition: 0.5s;
 }
 

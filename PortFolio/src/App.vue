@@ -1,35 +1,36 @@
 <script>
+
 import HomeView from "./view/HomeView.vue"
 import Navbar from "./components/Navbar.vue";
 
 export default {
   name: "App",
 
-  components: { HomeView, Navbar }
+  components: { Navbar }
 };
 </script>
 
 <template>
   <div id="app">
-    <div class="nav">
-      <Navbar />
-    </div>
-
-    <div class="centerView">
-      <HomeView />
-    </div>
+    <router-view />
   </div>
+
+
+
+
 
 </template>
 
 <style scoped>
 #app {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
 
-.centerView {
-  margin-left: 80px;
-  margin-left: 80px;
-  margin-top: 40px;
+
+body {
+  /* background-color: #272727; */
+  background-color: black;
+
 }
 </style>

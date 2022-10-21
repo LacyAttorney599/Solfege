@@ -60,7 +60,9 @@
 }
 
 body {
-  background-color: #272727;
+  /* background-color: #272727; */
+  background-color: black;
+
   /* min-height: 100vh;
     color: var(--color-text);
     background: var(--color-background);

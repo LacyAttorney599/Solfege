@@ -6,59 +6,65 @@ export default {
 
 <template>
 
-    <a href="#">
-        <div class="blockCard">
-            <img class="imgPlaylist" src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg"
-                alt="">
-            <p class="nomPlaylist">{{"Rap Fr"}}</p>
-        </div>
+    <div class="playlists">
+        <a href="#">
+            <div class="blockCard">
+                <img class="imgPlaylist"
+                    src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg" alt="">
+                <p class="nomPlaylist">{{"Rap Fr"}}</p>
+            </div>
 
-    </a>
+        </a>
 
-    <a href="#">
-        <div class="blockCard">
-            <img class="imgPlaylist" src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg"
-                alt="">
-            <p class="nomPlaylist">{{"Rap Fr"}}</p>
-        </div>
+        <a href="#">
+            <div class="blockCard">
+                <img class="imgPlaylist"
+                    src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg" alt="">
+                <p class="nomPlaylist">{{"Rap Fr"}}</p>
+            </div>
 
-    </a>
+        </a>
 
-    <a href="#">
-        <div class="blockCard">
-            <img class="imgPlaylist" src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg"
-                alt="">
-            <p class="nomPlaylist">{{"Rap Fr"}}</p>
-        </div>
+        <a href="#">
+            <div class="blockCard">
+                <img class="imgPlaylist"
+                    src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg" alt="">
+                <p class="nomPlaylist">{{"Rap Fr"}}</p>
+            </div>
 
-    </a>
-    <a href="#">
-        <div class="blockCard">
-            <img class="imgPlaylist" src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg"
-                alt="">
-            <p class="nomPlaylist">{{"Rap Fr"}}</p>
-        </div>
+        </a>
+        <a href="#">
+            <div class="blockCard">
+                <img class="imgPlaylist"
+                    src="https://www.thebackpackerz.com/wp-content/uploads/2018/09/Josman-400x400.jpg" alt="">
+                <p class="nomPlaylist">{{"Rap Fr"}}</p>
+            </div>
 
-    </a>
+        </a>
 
+    </div>
 
 </template>
 
 <style>
+.playlists {
+    display: flex;
+    flex-direction: row;
+}
+
 .blockCard {
-    width: 200px;
-    height: 250px;
-    background-color: #525252;
-    box-shadow: 0px 5px 20px black;
+    width: 150px;
+    height: 200px;
+    background-color: #191919;
     border-radius: 10px;
-    transition: 0.2s;
+    transition: 0.3s;
     margin-right: 70px;
 }
 
 
 .imgPlaylist {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -72,8 +78,10 @@ export default {
 
 }
 
+
 .blockCard:hover {
-    box-shadow: 0px 20px 50px black;
-    transition: 0.8s;
+    background: -webkit-linear-gradient(#8774FF, #ff98be92);
+    transition: 0.3s;
+
 }
 </style>

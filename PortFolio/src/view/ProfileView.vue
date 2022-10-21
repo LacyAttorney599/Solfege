@@ -1,15 +1,17 @@
 <script>
 export default {
-    name: "Profile"
+    name: "ProfileView",
+    props: ['name'],
+
 };
 </script>
 
 <template>
-    <p>{{"c'est la page profil de l'utilisateur"}}</p>
+    <p class="text">{{"c'est la page profil de l'utilisateur"}}</p>
 </template>
 
 <style>
-p {
+.text {
     font-size: 70px;
 }
 </style>
