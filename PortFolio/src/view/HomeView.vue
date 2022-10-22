@@ -1,9 +1,10 @@
 <script>
 import CardPlayList from '../components/CardPlayList.vue';
 import NavBar from "../components/Navbar.vue";
+import SongComponent from '../components/SongComponent.vue';
 export default {
     name: "HomeView",
-    components: { CardPlayList, NavBar },
+    components: { CardPlayList, NavBar, SongComponent },
     methods: {
         showProfile: function (name) {
             this.$router.push({ name: 'profile', params: { name: name } });
@@ -27,6 +28,10 @@ export default {
         <div class="CardPlaylists">
             <CardPlayList />
         </div>
+        <div class="SongList">
+            <SongComponent />
+
+        </div>
     </div>
 
 </template>
@@ -42,7 +47,7 @@ export default {
 .colorText {
     font-size: 64px;
     background: -webkit-linear-gradient(#8774FF, #FF98BD);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
@@ -58,7 +63,7 @@ export default {
 
 .pseudo:hover {
     background: -webkit-linear-gradient(#8774FF, #FF98BD);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     transition: 0.5s;
@@ -66,8 +71,10 @@ export default {
 
 /* --- la disposition des Cards Playlist */
 .CardPlaylists {
-    margin-top: 50px;
-    margin-left: 50px;
     display: flex;
+}
+
+.SongList {
+    margin-top: 50px;
 }
 </style>

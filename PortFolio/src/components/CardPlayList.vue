@@ -7,6 +7,7 @@ export default {
 <template>
 
     <div class="playlists">
+        <!-- component playlist -->
         <a href="#">
             <div class="blockCard">
                 <img class="imgPlaylist"
@@ -80,7 +81,7 @@ export default {
 
 
 .blockCard:hover {
-    background: -webkit-linear-gradient(#8774FF, #ff98be92);
+    background: -webkit-linear-gradient(45deg, #8774FF, #ff98be);
     transition: 0.3s;
 
 }
